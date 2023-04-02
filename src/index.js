@@ -1,17 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from "./App";
+// import "./styles/styles.scss";
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./styles/styles.scss";
+//import { Helmet, HelmetProvider } from "react-helmet-async"; //voir  index.html -> data-rh="true" dans meta description
+// const helmetContext = {};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <HelmetProvider>
+      <Helmet>
+        <title>Félix Bacon - Accueil</title>
+        <meta
+          name="description"
+          content="Félix Bacon - Création de site Web - Développeur web - Webmaster - Télécharger CV - Toulouse"
+        />
+        <link rel="canonical" href="felixbacon.online"/>
+      </Helmet> */}
+      <App />
+    {/* </HelmetProvider> */}
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const { helmet } = helmetContext;

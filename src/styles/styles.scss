@@ -1,0 +1,7 @@
+@import "./settings"; //toujours settings en premier qui dait découler tt son style sur les autres feuilles
+@import "./components-styles/navigation";
+@import "./pages-styles/contact";
+@import "./pages-styles/home";
+@import "./pages-styles/knowledges";
+@import "./pages-styles/portfolio";
+@import "./pages-styles/notFound";
