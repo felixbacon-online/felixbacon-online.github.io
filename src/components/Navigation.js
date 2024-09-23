@@ -6,7 +6,15 @@ const Navigation = () => {
     <header className="sidebar">
       <div className="id">
         <div className="idContent">
-          <img src="./media/photo-cv-jaune-orange.jpg"width='641' height='653' alt="profil-pic" />
+          {/* <img src="./media/photo-cv-orange.jpg"width='641' height='653' alt="profil-pic" /> */}
+          {/* <img src="./media/cover-face.jpg"width='641' height='653' alt="profil-pic" /> */}
+          <img
+            className="toupie"
+            src="./media/test-cover-4.jpg"
+            width="641"
+            height="653"
+            alt="profil-pic"
+          />
           <div class="h3">Félix Bacon</div>
         </div>
       </div>
@@ -15,7 +23,7 @@ const Navigation = () => {
           <li>
             <NavLink exact to="/" activeClassName="navActive">
               <i className="fas fa-home"></i>
-              <span> Accueil</span>
+              <span className="scale-effect"> Accueil</span>
             </NavLink>
           </li>
           <li>
@@ -36,6 +44,12 @@ const Navigation = () => {
               <span> Contact </span>
             </NavLink>
           </li>
+          <li>
+            <NavLink exact to="/mentions-legales" activeClassName="navActive">
+              <i className="fas fa-balance-scale"></i>
+              <span> Mentions légales </span>
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <div className="socialNetwork">
@@ -47,6 +61,15 @@ const Navigation = () => {
               rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/felixbacon.artisanwebdeveloper/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-brands fa-instagram"></i>
             </a>
           </li>
           <li>

@@ -1,18 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-//import { Helmet } from "react-helmet-async";
+ import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   return (
     <div className='notFound'>
-       {/* <Helmet>
+       <Helmet>
         <title>Page non trouvée</title>
         <meta
           name="description"
           content="erreur - page non existante"
         />
-        <link rel="canonical" href="" />
-      </Helmet> */}
+      </Helmet>
       <div className="notFoundContent">
         <h3>Désolé cette page n'éxiste pas ! </h3>
         <NavLink exact to ="/">

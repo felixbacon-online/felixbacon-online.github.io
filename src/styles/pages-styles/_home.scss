@@ -1,13 +1,124 @@
+// @keyframes neon-animation {
+//   0% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffb938,
+//       0 0 70px #ffb938, 0 0 80px #ffb938, 0 0 100px #ffb938, 0 0 150px #ffb938;
+//   }
+//   10% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffb938,
+//       0 0 35px #ffb938, 0 0 40px #ffb938, 0 0 50px #ffb938, 0 0 75px #ffb938;
+//   }
+//   20% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffb938,
+//       0 0 70px #ffb938, 0 0 80px #ffb938, 0 0 100px #ffb938, 0 0 15px #ffb938;
+//   }
+//   30% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffb938,
+//       0 0 35px #ffb938, 0 0 40px #ffb938, 0 0 50px #ffb938, 0 0 75px #ffb938;
+//   }
+//   40% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffb938,
+//       0 0 70px #ffb938, 0 0 80px #ffb938, 0 0 100px #ffb938, 0 0 150px #ffb938;
+//   }
+//   50% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffb938,
+//       0 0 35px #ffb938, 0 0 40px #ffb938, 0 0 50px #ffb938, 0 0 75px #ffb938;
+//   }
+//   60% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffb938,
+//       0 0 70px #ffb938, 0 0 80px #ffb938, 0 0 100px #ffb938, 0 0 150px #ffb938;
+//   }
+//   70% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffb938,
+//       0 0 35px #ffb938, 0 0 40px #ffb938, 0 0 50px #ffb938, 0 0 75px #ffb938;
+//   }
+//   80% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffb938,
+//       0 0 70px #ffb938, 0 0 80px #ffb938, 0 0 100px #ffb938, 0 0 150px #ffb938;
+//   }
+//   90% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffb938,
+//       0 0 35px #ffb938, 0 0 40px #ffb938, 0 0 50px #ffb938, 0 0 75px #ffb938;
+//   }
+//   100% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+//   }
+// }
+
+//-------------------------------------------------------------------------
+
+// @keyframes neon-animation {
+//   0% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   10% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   20% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   30% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   40% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   50% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   60% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   70% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   80% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   90% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   100% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+// }
+
+// @keyframes neon-animation {
+//   0% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   5% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   10% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   15% {
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #00eaff, 0 0 35px #00eaff, 0 0 40px #00eaff, 0 0 50px #00eaff, 0 0 75px #00eaff;
+//   }
+//   20% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+//   /* Continuer à ajuster les pourcentages pour atteindre l'effet désiré */
+//   100% {
+//     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff, 0 0 150px #00eaff;
+//   }
+// }
+
 .home {
   .homeContent {
-    border: 1px solid $black;
-    border: 2px solid #ee5a04;
-    background: linear-gradient(143deg, $color-1 50%, transparent 100%);
+    // border: 1px solid $black;
+    border: 2px solid #a20000;
+    // background: linear-gradient(150deg, $color-1 50%, transparent 100%);
+    // background: linear-gradient(190deg, #333 55%, transparent 200%);
+    background: linear-gradient(156deg, #2d2d2d 75%, transparent 250%);
     width: 100%;
-
+    // min-height: $minHeight;
+    //min-height: 620px;
+    min-height: 98vh;
     border-radius: $borderRadius;
     position: relative;
     overflow: hidden;
+    // display:grid;
 
     &:after {
       content: "";
@@ -21,52 +132,108 @@
 
     .content {
       position: absolute;
-      top: 10%;
-      left: 5%;
+      top: 45px;
+      left: 2%;
       font-family: $font-1;
+      .container-header {
+        padding-bottom: 30px;
+        display: flex;
+        img {
+          // width: 100px;
+          flex-direction: column;
+          margin-left: 2rem;
+          border-radius: 0%;
+        }
+        // .neon {
+        //   animation: neon-animation 0.5s ease-in-out infinite alternate;
+        // }
+        #neon-text {
+          font-size: 58px;
+          //color: #fff;
+        }
+        .title-wordpress {
+          color: #53242478;
+        }
+        .title-wordpress:hover {
+          color: #ffb938;
+          //transition:0.1s ease;
+        }
+        h1 {
+          flex-direction: column;
+          align-self: center;
+          padding-left: 3rem;
+          padding-right: 10px;
+          padding-bottom: 20px;
+          font-size: 2.7rem !important;
+          font-weight: 900;
+          font-family: $font-1;
+          font-style: italic;
+          color: $color-5;
 
-      h1 {
-        padding-left: 2rem;
+          text-transform: uppercase;
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 2px #fff,
+            0 0 10px #ffb938, 0 0 5px #ffb938, 0 0 8px #ffb938, 0 0 10px #ffb938,
+            0 0 15px #ffb938;
+        }
+        .title-wordpress {
+          .bottom-marge {
+            margin-bottom: 13px;
+          }
+          .lowercase {
+            text-transform: none;
+          }
+        }
+        // h1:hover {
+        //   //color: $color-8;
+        // }
+      }
+
+      .h2 {
         font-size: 2.5rem;
+        text-transform: uppercase;
         font-weight: 800;
+        font-style: italic;
+        padding: 3.5rem 2rem 0.8rem;
+        color: #ffb938;
+        text-shadow: 2px 2px 2px $black;
+      }
+      .h2bis {
+        padding: 0.5rem 2rem 0.8rem;
+        font-weight: 900;
         font-family: $font-1;
         font-style: italic;
         color: $color-5;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 2px $black;
-      }
-      .h2 {
-        font-size: 2.5rem;
-        font-weight: 800;
-        font-style: italic;
-        padding: 4.5rem 16.3rem 0.8rem;
-        color: $color-8;
-        text-shadow: 1px 4px 1px $black;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 2px #fff,
+          0 0 10px #ffb938, 0 0 5px #ffb938, 0 0 8px #ffb938, 0 0 10px #ffb938,
+          0 0 15px #ffb938;
       }
       .h3 {
         font-size: 2.5rem;
         font-weight: 800;
         font-style: italic;
-        padding: 4.5rem 11.5rem 0.8rem;
+        padding: 1.5rem 7.5rem 0.8rem;
         color: $color-8;
-        text-shadow: 1px 4px 1px $black;
+        text-shadow: 2px 2px 2px $black;
       }
       .pdf {
-        margin-top: 6.5rem;
-        margin-left: 1rem;
+        margin-top: 2.5rem;
+        margin-left: 45px;
         a {
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-style: italic;
           // background: $color-3;
           // background: #faff38;
-          background: #faff38;
-          padding: 0.5rem 1rem;
+          // background: #faff38;
+          // background: #fed04b;
+          background: #ffb938;
+          padding: 0.5rem 0.5rem;
           border-radius: $borderRadius;
-          box-shadow: 0 5px 1px rgba(51, 51, 51, 0.76);
-          transition: 0.2s ease;
+          box-shadow: 2px 2px 4px $black;
+          // transition: 0.2s ease;
 
           &:hover {
-            background: $color-7;
+            //background: $color-7;
+            background: #fff2add8;
           }
         }
       }
@@ -75,29 +242,64 @@
 }
 @media screen and (max-width: 1300px) {
   .home .homeContent {
-    background: linear-gradient(143deg, $color-1 55%, transparent 100%);
+    // background: linear-gradient(143deg, $color-1 55%, transparent 200%);
+    background: linear-gradient(143deg, #333 55%, transparent 200%);
     height: auto;
     .content {
       position: absolute;
       top: 10%;
-      left: 2%;
+      left: 4%;
       font-family: $font-1;
-
+      #neon-text {
+        font-size: 3rem;
+        //color: #fff;
+      }
       h1 {
         padding-left: 2rem;
         font-size: 2.5rem;
         text-shadow: 2px 2px 2px $black;
       }
       .h2 {
-        font-size: 2.5rem;
-        padding: 4.5rem 2rem 0.8rem;
+        font-size: 2rem;
+        padding: 3.5rem 2rem 0.8rem;
       }
       .h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 4.5rem 2rem 0.8rem;
       }
       .pdf {
-        margin-top: 4.5rem;
+        margin-top: 3.5rem;
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .home .homeContent {
+    // background: linear-gradient(143deg, $color-1 55%, transparent 200%);
+    background: linear-gradient(143deg, #333 75%, transparent 200%);
+    height: auto;
+    .content {
+      position: absolute;
+      top: 10%;
+      left: 4%;
+      font-family: $font-1;
+      #neon-text {
+        font-size: 2.5rem !important;
+        //color: #fff;
+      }
+      h1 {
+        padding-left: 2rem;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 2px $black;
+      }
+      .h2 {
+        font-size: 2rem;
+        padding: 1.5rem 2rem 0.8rem;
+      }
+      .pdf {
+        margin-top: 2rem;
         margin-left: 2rem;
       }
     }
@@ -109,23 +311,29 @@
     height: 87vh;
     .content {
       position: absolute;
-      top: 10%;
+      top: 8%;
       left: 2%;
-
-      h1 {
-        padding-left: 2rem;
-        font-size: 2.5rem;
+      .container-header {
+        #neon-text {
+          // font-size: 38px;
+          font-size: 2rem !important;
+          //color: #fff;
+        }
+        h1 {
+          padding-left: 2rem;
+          font-size:2rem !important;
+        }
       }
       .h2 {
-        font-size: 2.5rem;
-        padding: 3.5rem 2rem 0.8rem;
+        font-size: 2rem;
+        padding-top: 0.5rem;
       }
       .h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 3.5rem 2rem 0.8rem;
       }
       .pdf {
-        margin-top: 3.5rem;
+        margin-top: 1.5rem;
         margin-left: 2rem;
       }
     }
@@ -133,25 +341,55 @@
 }
 
 @media screen and (max-width: 550px) {
+  .home .homeContent .content {
+    left: 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
   .home .homeContent {
-    background: linear-gradient(100deg, $color-1 80%, transparent 100%);
+    //background: linear-gradient(123deg, $color-1 55%, transparent 200%);
+    background: linear-gradient(123deg, #333 75%, transparent 200%);
     .content {
       &:after {
         background: url("../../media/code-ligne-jaune.jpg") no-repeat 60% 50% /
           cover !important;
       }
-      h1 {
-        font-size: 2rem !important;
+      .container-header {
+        display: block;
+        padding-bottom: 0px;
+
+        img {
+          padding-left: 0;
+          margin-left: 0;
+        }
+        #neon-text {
+          // font-size: 38px;
+          font-size: 1.5rem !important;
+          margin-left: 20px;
+          margin-right: 20px;
+          //color: #fff;
+        }
+        h1 {
+          padding-top: 3rem;
+          padding-left: 0% !important;
+          padding-right: 0;
+          flex-direction: row !important;
+          font-size: 1.5rem !important;
+        }
       }
       .h2 {
-        font-size: 2rem !important;
+        font-size: 1.5rem !important;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       .h3 {
         font-size: 2rem !important;
       }
       .pdf {
-        margin-top: 2.5rem;
+        margin-top: 1.5rem;
         font-size: 1rem;
+        margin-left: 0;
       }
     }
   }

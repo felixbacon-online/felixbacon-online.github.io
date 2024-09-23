@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Knowledges from "./pages/Knowledges";
 import Portfolio from "./pages/Portfolio";
 import NotFound from "./pages/NotFound";
+import LegalNotice from "./pages/LegalNotice";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/competences" component={Knowledges} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} /> 
+        <Route path="/mentions-legales" component={LegalNotice} /> 
         <Route component={NotFound} />
        </Switch>
       </Router>

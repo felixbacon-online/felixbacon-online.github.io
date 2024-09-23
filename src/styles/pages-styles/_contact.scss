@@ -1,37 +1,39 @@
-
 .contactContent {
-  border: 2px solid #ee5a04;
- background: linear-gradient(140deg, $color-1 2%, transparent 140%);
- border-radius: $borderRadius;
+  border: 2px solid #a20000;
+  // background: linear-gradient(140deg, $color-1 2%, transparent 200%);
+  background: linear-gradient(140deg, #333 64%, transparent 200%);
+  border-radius: $borderRadius;
   width: 100%;
   position: relative;
   overflow: hidden;
   display: grid;
+  min-height: 98vh;
+  // min-height:620px;
   grid-template-columns: 1fr;
-  grid-template-rows: 15% 55% 30%;
-  grid-template-areas: 
+  grid-template-rows: 15% 70% 15%;
+  grid-template-areas:
     "1"
     "2"
     "3";
 
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: inherit;
+    background: url(../../media/code-ligne-jaune.jpg) no-repeat center top/cover;
+    z-index: -1;
+    filter: brightness(100%);
 
-    &:after {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: inherit;
-      background: url(../../media/code-ligne-jaune.jpg) no-repeat center top/cover ;
-      z-index: -1;
-      filter: brightness(100%);
-      
-      
-      border-radius: $borderRadius;
-    }
+    border-radius: $borderRadius;
+  }
 
   .contactBox {
     grid-area: 2;
-    background: $color-1;
-    border: 2px solid #ee5a04;
+   // background: $color-1;
+   // background:  rgba(255,185,56,.8549019607843137);
+    background: #ffb938da;
+    border: 2px solid #a20000;
     margin: 0 auto;
     padding: 1rem 3rem;
     z-index: 3;
@@ -39,23 +41,24 @@
     box-shadow: 0 3px 10px #333;
     width: 50%;
     min-width: 550px;
-    min-height: 200px;
 
     h1 {
       font-size: 2rem;
       text-align: center;
-      font-style:italic;
+      font-style: italic;
       margin-top: 0.3rem;
       position: relative;
-      color: $color-8;
+      // color: $color-8;
+      color: #a20000;
       // text-shadow: 1px 1px 2px $black;
-      text-shadow: 2px 2px 3px #000000;
+      text-shadow: 1px 1px 3px #000000;
 
       &:after {
-        content: '';
-        height: 1px;
-        width: 50%;
-        background: $color-1;
+        content: "";
+        height: 2px;
+        width: 40%;
+        // background: $color-1;
+        background: #a20000;
         position: absolute;
         bottom: -25px;
         left: 50%;
@@ -76,20 +79,31 @@
         font-size: 1.4rem;
         position: absolute;
         transform: translateY(2px);
-        color: $color-8;
+        // color: $color-8;
+        color: #a72b2b;
         text-shadow: 1px 1px 1px $black;
       }
 
       span {
-        text-shadow: 4px 4px 4px $black;
+        color: #a20000;
+        // color: black;
+        // text-shadow: 1px 1px 3px #a20000;
         font-size: 1.4rem;
+        font-weight: 600;
         position: absolute;
         transform: translateX(52px);
         background: transparent;
         border: none;
         outline: none;
         width: 350px;
-        transition: .2s ease;
+        transition: 0.2s ease;
+        .contact-block {
+          color: #333333;
+        }
+        .contact-block:hover {
+          color: #a20000;
+          text-shadow: 1px 1px 8px $black;
+        }
       }
       .clickInput:hover {
         transform: translateX(56px);
@@ -109,9 +123,8 @@
       justify-content: space-around;
 
       a {
-       
         width: 18%;
-        border: 2px solid #ee5a04;
+        border: 2px solid #a20000;
         font-size: 0.8rem;
         background: $color-1;
         border-radius: $borderRadius;
@@ -120,23 +133,24 @@
         box-shadow: $shadow;
         transform: scaleY(0);
         transform-origin: center;
-        transition: .2s ease;
-        transition: scale .1s;
+        transition: 0.2s ease;
+        transition: scale 0.1s;
 
         &:hover {
           background: $color-7;
-          transition: 0.8s all; 
-          
-        i {
-           color: $color-1;
-           
-          
-         }
+          background: #e5511d;
+          transition: 0.8s all;
+
+          i {
+            color: $color-1;
+            transition: 0.8s all;
+          }
         }
 
         i {
           color: $color-8;
-          margin-top: .3rem;
+          color: #a72b2b;
+          margin-top: 0.3rem;
           font-size: 1.4rem;
         }
       }
@@ -144,7 +158,6 @@
       @mixin networkAnim($timeout) {
         animation: pop 1s forwards;
         animation-delay: $timeout;
-
       }
       @keyframes pop {
         to {
@@ -152,10 +165,10 @@
         }
       }
       a:nth-child(1) {
-        @include networkAnim(.3s);
+        @include networkAnim(0.3s);
       }
       a:nth-child(2) {
-        @include networkAnim(.6s);
+        @include networkAnim(0.6s);
       }
       a:nth-child(3) {
         @include networkAnim(0.9s);
@@ -166,46 +179,60 @@
     }
   }
 }
-.text-color{
-  color:$black;
+.text-color {
+  color: #a20000 !important;
   font-weight: 700;
-   text-shadow: 1px 1px 1px $color-7 !important;
+  text-shadow: 1px 1px 3px $black !important;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 850px) {
   .contactContent {
     height: 87vh;
   }
 
   .contactContent {
     .contactBox {
-      margin:0.5rem auto;
-      
-     
+      margin: 0.5rem auto;
+    }
   }
 }
 
-}
-
-@media screen and (max-width: 585px){
+@media screen and (max-width: 585px) {
   .contactContent {
     .contactBox {
-     
-       margin: 0.5rem auto;
-      padding:1rem 1rem;
-      min-width: 98% !important;
-      ul i{
-        font-size: 1rem;
+      margin: 0.5rem auto;
+      padding: 1rem 1rem;
+      min-width: 88% !important;
+      h1 {
+        font-size: 1.5rem !important;
+      }
+      ul i {
+        font-size: 1rem !important;
+      }
+      span {
+        overflow-wrap: break-word;
+        font-size: 1rem !important;
+        transform: translateX(25px)!important;
       }
     }
-    ul i{
-      font-size: 1.1rem;
-    }
-    span {
+    .contactBox span {
       font-size: 1rem !important;
     }
-    h4 {
-      font-size: .9rem;
+
+    .socialNetwork h2 {
+      font-size: 0.8rem !important;
+    }
+    .socialNetwork {
+      ul i {
+        font-size: 1.1rem;
+      }
+      ul a {
+        width: 50px !important;
+        font-size: 1.1rem;
+      }
+      span {
+        font-size: 1rem !important;
+      }
     }
   }
 }

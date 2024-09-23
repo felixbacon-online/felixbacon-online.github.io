@@ -29,22 +29,21 @@ import Languages from "../components/knowledges/Languages";
 import OtherSkills from "../components/knowledges/OtherSkills";
 
 import Navigation from "../components/Navigation";
-//import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 
 const Knowledges = () => {
   return (
     <div className="knowledges">
-      {/* <Helmet>
+      <Helmet>
         <title>Félix Bacon - Compétences</title>
         <meta
           name="description"
           content="LANGUAGES INFORMATIQUE - FRAMEWORKS & BIBLIOTHÈQUES - EXPÉRIENCE - AUTRES COMPÉTENCES - INTÉRÊTS & LOISIRS"
         />
-        <link rel="canonical" href="/competences" />
-      </Helmet> */}
+        <link rel="canonical" href="https://felixbacon.online/competences" />
+      </Helmet>
       <Navigation />
       <section className="knowledgesContent">
-        {/* <h1 class="non-visible">page des comptétences multiples de Félix Bacon</h1> */}
         <Languages />
         <Experience />
         <OtherSkills />

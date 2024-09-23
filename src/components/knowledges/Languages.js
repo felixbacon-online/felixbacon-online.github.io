@@ -22,7 +22,8 @@ class Languages extends Component {
   render() {
     let { languages, frameworks } = this.state;
     return (
-      <div className="languagesFrameworks">
+      <div className="languagesFrameworks"> 
+      <h1 className="non-visible">page des comptétences multiples de Félix Bacon</h1> 
         <ProgressBar
           languages={languages}
           title="languages"

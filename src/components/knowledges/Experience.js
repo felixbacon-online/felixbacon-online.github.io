@@ -28,12 +28,12 @@ const Experience = () => {
             HTML5 et CSS3
           </li>
           <li>
-            Découvrir le CSS avec Sass, créez des sites web responsive avec
+            Découvrir le CSS avec Sass, créer des sites web responsive avec
             Bootstrap
           </li>
           <li>Programmer avec JavaScript, VueJs3, React...</li>
           <li> Utiliser Git et GitHub pour des projets de développement </li>
-          <li> Créer un site moderne et professionnel avec WordPress 5 </li>
+          <li> Créer un site moderne et professionnel avec WordPress 5, 6 </li>
         </ul>
       </div>
     </div>

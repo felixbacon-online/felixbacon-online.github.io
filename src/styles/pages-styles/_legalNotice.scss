@@ -1,0 +1,214 @@
+.legalNotice {
+  .legalNoticeContent {
+    padding: 10px;
+    // border: 1px solid $black;
+    border: 2px solid #a20000;
+    // background: linear-gradient(22deg,#a20000 ,$color-1  55%, transparent 200%);
+    // background:linear-gradient(61deg, #982b2b, #FFB938 70%, transparent 200%);
+    //background-color: #FFB938 ;
+    //background-color: #ffd2abeb ;
+    width: 100%;
+    // min-height: $minHeight;
+    //min-height: 620px;
+    // min-height: 87vh;
+    border-radius: $borderRadius;
+    // position: relative;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    // &:after {
+    //   content: "";
+    //   position: absolute;
+    //   height: 100%;
+    //   width: inherit;
+    //   background: url("../../media/code-ligne-jaune.jpg") no-repeat center/cover;
+    //   z-index: -1;
+    //   filter: brightness(100%);
+    // }
+
+    .content {
+      // position: absolute;
+      //  top: 2%;
+      //  left: 2%;
+      // font-family: $font-1;
+      .container-header {
+        padding-top: 20px;
+        display: flex;
+        margin-bottom: 0.5rem 1rem;
+        padding-left: 50px;
+        img {
+          flex-direction: column;
+          margin-left: 5px;
+          // border-radius: 20px;
+        }
+        h1 {
+          // flex-direction: column;
+          align-self: center;
+          padding-left: 4rem;
+          padding-right: 10px;
+          font-size: 2.5rem;
+          font-weight: 800;
+          font-family: $font-1;
+          font-style: italic;
+          // color: $color-5;
+          color: #a02b2b;
+          text-transform: uppercase;
+          // text-shadow: 2px 2px 2px $black;
+        }
+      }
+      .bloc-container {
+        padding: 20px;
+        // word-wrap: break-word;
+        // overflow: hidden;
+        //  display:flex;
+        //  flex-direction: column;
+        h2 {
+          font-size: 1rem;
+          font-weight: 800;
+          font-style: italic;
+          padding: 1rem 1.3rem 0.1rem;
+          // color: $color-8;
+          color: black;
+          text-shadow: 2px 2px 2px $color-8;
+          text-shadow: 1px 1px 4px #ffb938;
+        }
+        h3 {
+          margin-top: 10px;
+          font-size: 0.9rem;
+          font-weight: 800;
+          font-style: italic;
+          padding: 0.1rem 2.5rem 0.2rem;
+          color: black;
+          // text-shadow: 2px 2px 2px $color-8;
+          text-shadow: 1px 1px 2px #ffb938;
+        }
+        .paragraphe {
+          //display: flex;
+          font-size: 14px;
+          color: black;
+          padding: 0.1rem 3.5rem 0.8rem;
+          .clickInput {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+// }
+// @media screen and (max-width: 1300px) {
+//   .home .homeContent {
+//     background: linear-gradient(143deg, $color-1 55%, transparent 100%);
+//     height: auto;
+//     .content {
+//       position: absolute;
+//       top: 10%;
+//       left: 4%;
+//       font-family: $font-1;
+
+//       h1 {
+//         padding-left: 2rem;
+//         font-size: 2.5rem;
+//         text-shadow: 2px 2px 2px $black;
+//       }
+//       .h2 {
+//         font-size: 2rem;
+//         padding: 4.5rem 2rem 0.8rem;
+//       }
+//       .h3 {
+//         font-size: 2rem;
+//         padding: 4.5rem 2rem 0.8rem;
+//       }
+//       .pdf {
+//         margin-top: 4.5rem;
+//         margin-left: 2rem;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 850px) {
+//   .home .homeContent {
+//     height: 87vh;
+//     .content {
+//       position: absolute;
+//       top: 10%;
+//       left: 2%;
+//       h1 {
+//         padding-left: 2rem;
+//         font-size: 2rem;
+//       }
+
+//       .h2 {
+//         font-size: 2rem;
+//         padding: 3.5rem 2rem 0.8rem;
+//       }
+//       .h3 {
+//         font-size: 2rem;
+//         padding: 3.5rem 2rem 0.8rem;
+//       }
+//       .pdf {
+//         margin-top: 3.5rem;
+//         margin-left: 2rem;
+//       }
+//     }
+//   }
+// }
+
+@media screen and (max-width: 550px) {
+ .content {
+    .container-header {
+      padding-left: 10px!important;
+      h1{
+        padding-left: 2rem!important;
+        font-size: 1.8rem!important;
+      }
+    }
+    .bloc-container{
+      padding:5px!important;
+    }
+  }
+  //   .home .homeContent .content{
+  //    left:0;
+  //     text-align: center;
+  //     width: 100%;
+  //     margin: auto;
+  //   }
+  //   .home .homeContent {
+  //     background: linear-gradient(123deg, $color-1 55%, transparent 100%);
+  //     .content {
+
+  //       &:after {
+  //         background: url("../../media/code-ligne-jaune.jpg") no-repeat 60% 50% /
+  //           cover !important;
+  //       }
+  //       .container-header {
+  //       display: block;
+
+  //         img {
+  //         padding-left: 0;
+  //         margin-left: 0;
+  //         }
+  //         h1 {
+  //           padding-top: 3rem;
+  //           padding-left: 0%!important;
+  //           padding-right: 0;
+  //           flex-direction: row!important;
+  //           font-size: 2rem !important;
+  //         }
+  //       }
+  //       .h2 {
+  //         font-size: 2rem !important;
+  //       }
+  //       .h3 {
+  //         font-size: 2rem !important;
+  //       }
+  //       .pdf {
+  //         margin-top: 2.5rem;
+  //         font-size: 1rem;
+  //         margin-left: 0;
+
+  //       }
+  //     }
+  //   }
+}

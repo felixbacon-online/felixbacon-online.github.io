@@ -1,24 +1,27 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Rotation complète à 360 degrés */
+  }
+}
+
 .sidebar {
-  // border:1px solid $color-6;
-  border: 2px solid #ee5a04;
-  background: $color-1;
+  border: 2px solid #a20000;
+  background: #ffb938da;
   font-family: $font-1;
- // height: 100%;
-  min-height: $minHeight;
+
   min-width: 264px;
   border-radius: $borderRadius;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  // grid-template-rows: 250px 1fr 108px;
-  grid-template-rows:40% 50% 10%;
-  grid-template-areas: 
+  grid-template-rows: 40% 50% 10%;
+  grid-template-areas:
     "1"
     "2"
     "3";
-
-
-    //  transition: 0.2s ease;
   .id {
     grid-area: 1;
     text-align: center;
@@ -35,25 +38,27 @@
       img {
         width: 150px;
         height: 150px;
-        border-radius: 10%;
-        // // box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-6;
-        //  box-shadow:  0 0 0 2px $color-6, ;
-        //  border: 2px solid #ee5a04;
-         box-shadow: 0 0 0 1px  black, 0 0 0 3px #ee5a04;
-        
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px #333333;
+        transition: transform 0.5s ease-in-out;
+        &:hover {
+          animation: spin 2s linear infinite;
+          cursor: pointer;
+        }
       }
       .h3 {
         font-weight: 700;
         font-style: italic;
         font-size: 1.3rem;
         text-transform: uppercase;
-        letter-spacing: .2rem;
+        letter-spacing: 0.2rem;
         margin-top: 1.5rem;
         color: $color-6;
-        text-shadow: 3px 3px 3px $color-7;
+        text-shadow: 2px 2px 2px $color-7;
       }
     }
   }
+
   .navigation {
     grid-area: 2;
     padding: 2rem 1rem;
@@ -61,35 +66,42 @@
     ul {
       height: 100%;
       display: grid;
-    
-      li {
-        padding: 1rem 0 1rem .4rem;
-        font-size: 1.3rem;
-        position: relative;
 
-        &:hover  {
-          transform: translateX(3px);
-          transition:  0.2s all;
-            text-shadow: 1px 1px 1px $white;
-          font-weight: 700;
-          i, span{
-            transition: .2s ease;
-            color: $black;
-            text-shadow: 1px 1px 1px $white;
-            text-shadow: 1px 1px 1px #a20000!important;
+      li {
+        padding: 0.4rem 0 1rem 0.4rem;
+        font-size: 1.1rem;
+        //text-shadow: 1px 1px 10px #7c3939;
+        position: relative;
+       // transition: font-size 0.2s ease; 
+        &:hover {
+          //transform: translateY(1px);
+
+          // text-shadow: 1px 1px 1px $white;
+          // text-shadow: 1px 1px 10px #7c3939;
+          // font-weight: 700;
+          i, span {
+           font-size: 1.12rem;
+           transition:  0.3s ease;
+            // font-size: 1.2rem;
+            color: #333333;
+            // text-shadow: 1px 1px 1px $white;
+            // text-shadow: 1px 1px 1px #a20000!important;
+            // text-shadow: 3px 3px 10px #7c3939;
           }
-          
         }
+
         a {
-        font-style: italic;
-        color: $color-8;
-        // transform: translate(3px, 3px);
-         text-shadow: 1px 1px 1px $black;
+          font-style: italic;
+          font-weight: 700;
+          color: $color-8;
+          color: #a20000;
+          // transform: translate(3px, 3px);
+          //  text-shadow: 2px 1px 1px $black;
         }
         .navActive {
-          color: $color-6;
-          text-shadow: 1px 1px 1px $color-7;
-          font-weight:700;
+          color: #333333;
+          // text-shadow: 1px 1px 12px #a20000;
+          font-weight: 700;
         }
 
         i {
@@ -98,7 +110,7 @@
           // transform: translateY(3px);
           // transition: .2s ease;
         }
-     
+
         span {
           margin-left: 2.7rem;
           // &:hover{
@@ -107,7 +119,6 @@
           //   text-shadow: 8px 8px 8px $white;
           // }
         }
-      
       }
     }
   }
@@ -122,21 +133,23 @@
 
       li {
         font-size: 1.2rem;
-        background: $color-8;  
+        // background: $color-8;
+        background: #e5511d;
         color: $color-1;
         border-radius: 50%;
         padding: 0.3rem 0.5rem;
-        transition: .3s;
+        transition: 0.3s;
         cursor: pointer;
 
         // a:hover {
         //   transition: 0.3s all;
         //   color: $color-1;
         // }
-        &:nth-child(1){//linkedin
+        &:nth-child(1) {
+          //linkedin
           padding: 0.3rem 0.5rem;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
           padding: 0.3rem 0.5rem;
         }
         &:hover {
@@ -153,9 +166,10 @@
       margin-top: 2rem;
       text-align: center;
       letter-spacing: 0.1rem;
-      font-size: .7rem;
+      font-size: 0.7rem;
 
-      a, a:visited {
+      a,
+      a:visited {
         color: $color-5;
 
         &:hover {
@@ -165,34 +179,37 @@
     }
   }
 }
-@media screen and (max-width: 850px){//jusqu'à 850 px en max-width on affiche la sidebar de cette manière:
+@media screen and (max-width: 850px) {
+  //jusqu'à 850 px en max-width on affiche la sidebar de cette manière:
   .sidebar {
     display: flex;
     min-height: 50px;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
 
-    .id, .socialNetwork {
+    .id,
+    .socialNetwork {
       display: none; //on ne voit plus le bloc .id et le bloc .socialNetwork
     }
     .navigation {
       width: 100%;
-      padding: .1rem 1rem;
+      padding: 0.1rem 1rem;
 
       ul {
         display: flex;
-        justify-content: space-between;//vous vous écartez les uns des autres
+        justify-content: space-between; //vous vous écartez les uns des autres
 
         span {
-          margin-left: 1.5rem !important;//! important pour qu'il se rapproche de son élément
+          margin-left: 1.5rem !important; //! important pour qu'il se rapproche de son élément
         }
       }
     }
   }
 }
-@media screen and (max-width:580px){//jusqu'à 580 px en  max-width affichage de catte manière:
+@media screen and (max-width: 580px) {
+  //jusqu'à 580 px en  max-width affichage de catte manière:
   .sidebar {
     ul {
-      justify-content: space-around !important;//écarté les uns des autres et tiens compte des bords
+      justify-content: space-around !important; //écarté les uns des autres et tiens compte des bords
 
       li {
         padding: 1rem 0 !important;

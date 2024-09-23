@@ -10,7 +10,7 @@ class ProjectList extends Component {
       { id: 2, value: "javascript" },
       { id: 3, value: "vueJs" },
       { id: 4, value: "react" },
-      { id: 5, value: "wordpress"},
+      { id: 5, value: "wordpress" },
     ],
     selectedRadio: "css",
   };

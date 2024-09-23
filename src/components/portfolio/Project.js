@@ -36,7 +36,7 @@ class Project extends Component {
           <div className="showInfos">
             <div className="infosContent">
               <div className="head">
-                <div className="sourceCode">
+                {/* <div className="sourceCode">
                   <a
                     href={link}
                     rel="noopener noreferrer"
@@ -55,11 +55,20 @@ class Project extends Component {
                   >
                     Code source
                   </a>
-                </div>
+                </div> */}
               </div>
+              <a
+                    href={link}
+                    rel="noopener noreferrer"
+                  
+                    target="_blank"
+                  >
+                  
               <img src={picture} alt=""></img>
+              </a>
               <div className="button return" onClick={this.handleInfo}>
-                Retourner sur portfolio
+                <span className="infos">
+              <i class="far fa-times-circle"></i></span>
               </div>
             </div>
           </div>

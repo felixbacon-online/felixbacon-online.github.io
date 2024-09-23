@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 5px;
+  max-width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  background-color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #333;
+}
+
+.home, .knowledges, .portfolio, .contact, .legalNotice {
+  display: flex;
+}
+@media screen and (max-width: 850px) {
+  .home, .knowledges, .portfolio, .contact, .legalNotice {
+    display: block !important;
+  }
+}
+
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent, .legalNoticeContent {
+  margin-left: 5px;
+}
+@media screen and (max-width: 850px) {
+  .homeContent, .knowledgesContent, .portfolioContent, .contactContent, .legalNoticeContent {
+    margin-left: 0 !important;
+  }
+}
