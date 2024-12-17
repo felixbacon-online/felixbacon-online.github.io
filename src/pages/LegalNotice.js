@@ -14,7 +14,7 @@ const LegalNotice = () => {
         />
         <link
           rel="canonical"
-          href="https://felixbacon.online/mentions-legales"
+          href="https://felixbacon-online.github.io/mentions-legales"
         />
       </Helmet>
       <Navigation />

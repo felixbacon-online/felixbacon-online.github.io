@@ -40,7 +40,10 @@ const Knowledges = () => {
           name="description"
           content="LANGUAGES INFORMATIQUE - FRAMEWORKS & BIBLIOTHÈQUES - EXPÉRIENCE - AUTRES COMPÉTENCES - INTÉRÊTS & LOISIRS"
         />
-        <link rel="canonical" href="https://felixbacon.online/competences" />
+        <link
+          rel="canonical"
+          href="https://felixbacon-online.github.io/competences"
+        />
       </Helmet>
       <Navigation />
       <section className="knowledgesContent">
